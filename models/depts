@@ -1,0 +1,12 @@
+<?php
+class depts extends grocery_CRUD_Model
+{
+	function select()
+	{
+		#$this->db->select("CONCAT(From_Date,'-',To_Date) AS Date");
+		$this->db->where('Event','Seminar');
+		$this->db->where('Event','Workshop');
+		$sql=$this->db->get('department_activity',1);
+	return $sql;
+}
+}
