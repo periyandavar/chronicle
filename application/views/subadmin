@@ -1,0 +1,13 @@
+<html>
+<body>
+<div>
+<?php include('admin.php');?>
+<label>Department</label>
+<input type="select" name="Department">
+<option>Department of Tamil (UG-R)</option>
+<option>Department of Hindi (UG-R)</option>
+<option>Department of Mathematics (UG-R)</option>
+<option>Department of Physics(UG-R)</option>
+<option value=<?php foreach($data as $row) echo $row->Department ?>></option>
+<option>Department of Computer Science (UG-R)</option>
+<option>Department of 
